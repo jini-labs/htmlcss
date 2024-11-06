@@ -54,6 +54,12 @@
       color: #d9d9d9;
       background-color: #1e1e1e;
     }
+    .nav > ul > li > ul {
+      display: block;
+      height: 0;
+      overflow: hidden;
+      transition: all 600ms;
+    }
     #slider {
       width: 100%;
       height: 300px;;
@@ -113,10 +119,42 @@
       <div class="logo"></div>
       <nav class="nav">
         <ul>
-          <li><a href="#">menu1</a></li>
-          <li><a href="#">menu2</a></li>
-          <li><a href="#">menu3</a></li>
-          <li><a href="#">menu4</a></li>
+          <li>
+            <a href="#">menu1</a>
+            <ul class="submenu">
+              <li><a href="#">submenu1-1</a></li>
+              <li><a href="#">submenu1-2</a></li>
+              <li><a href="#">submenu1-3</a></li>
+              <li><a href="#">submenu1-4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">menu2</a>
+            <ul class="submenu">
+              <li><a href="#">submenu1-1</a></li>
+              <li><a href="#">submenu1-2</a></li>
+              <li><a href="#">submenu1-3</a></li>
+              <li><a href="#">submenu1-4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">menu3</a>
+            <ul class="submenu">
+              <li><a href="#">submenu1-1</a></li>
+              <li><a href="#">submenu1-2</a></li>
+              <li><a href="#">submenu1-3</a></li>
+              <li><a href="#">submenu1-4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">menu4</a>
+            <ul class="submenu">
+              <li><a href="#">submenu1-1</a></li>
+              <li><a href="#">submenu1-2</a></li>
+              <li><a href="#">submenu1-3</a></li>
+              <li><a href="#">submenu1-4</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </div>
