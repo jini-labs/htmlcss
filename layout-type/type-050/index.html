@@ -73,6 +73,95 @@
       background-color: #31550b;
     }
 
+    @media (max-width: 1300px) {
+      .container {
+        width: 96%;
+      }
+      .contents {
+        flex-direction: column;
+      }
+      .contents .left {
+        width: 30%;
+        height: 780px;
+      }
+      .contents .left .content1 {
+        width: 100%;
+        height: 780px;
+      }
+      .contents .right {
+        width: 70%;
+        height: 780px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .contents .right .content2 {
+        width: 100%;
+        height: 260px;
+      }
+      .contents .right .content3 {
+        width: 50%;
+        height: 520px;
+      }
+      .contents .right .content4 {
+        width: 50%;
+        height: 520px;
+      }
+    }
+    @media (max-width: 780px) {
+      .container {
+        width: 100%;
+      }
+      .contents {
+        flex-direction: column;
+      }
+      .contents .right {
+        width: 70%;
+        height: 780px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .contents .right .content2 {
+        width: 100%;
+        height: 260px;
+      }
+      .contents .right .content3 {
+        width: 100%;
+        height: 260px;
+      }
+      .contents .right .content4 {
+        width: 100%;
+        height: 260px;
+      }
+    }
+    @media (max-width: 480px) {
+      .container {
+        width: 100%;
+      }
+      .contents .left {
+        width: 100%;
+        height: 180px;
+      }
+      .contents .left .content1 {
+        width: 100%;
+        height: 180px;
+      }
+      .contents .right {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .contents .right .content2 {
+        height: 200px;
+      }
+      .contents .right .content3 {
+        height: 200px;
+      }
+      .contents .right .content4 {
+        height: 200px;
+      }
+    }
+
   </style>
 </head>
 <body>
