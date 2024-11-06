@@ -44,10 +44,44 @@
       background-color: #fa5858;
     }
     @media (max-width: 1300px) {
+      #wrap {
+        width: 96%;
+      }
     }
     @media (max-width: 768px) {
+      #wrap {
+        width: 100%;
+      }
+      #main {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 630px 150px;
+        grid-template-areas:
+          "aside section"
+          "article article"
+        ;
+      }
+      #aside {
+        grid-area: aside;
+      }
+      #section {
+        grid-area: section;
+      }
+      #article {
+        grid-area: article;
+      }
     }
     @media (max-width: 480px) {
+      #main {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 430px 150px;
+        grid-template-areas:
+          "aside"
+          "section"
+          "article"
+        ;
+      }
     }
 
   </style>
