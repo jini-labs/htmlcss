@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #b3b3f5;
+    }
+    #wrap {
+      width: 1200px;
+      margin: 0 auto;
+    }
+    #header {
+      width: 1200px;
+      height: 100px;
+      background-color: #a7a3f5;
+    }
+    #nav {
+      width: 1200px;
+      height: 100px;
+      background-color: #9c86e3;
+    }
+    #main {
+      width: 1200px;
+      /* overflow: hidden; */
+    }
+    #aside {
+      width: 300px;
+      height: 780px;
+      background-color: #4d2ff3;
+      float: left;
+    }
+    #article1 {
+      width: 900px;
+      height: 260px; 
+      background-color: #4b3fef;
+      float: left;
+    }
+    #article2 {
+      width: 900px;
+      height: 260px; 
+      background-color: #281f8e;
+      float: left;
+    }
+    #article3 {
+      width: 900px;
+      height: 260px; 
+      background-color: #231883;
+      float: left;
+    }
+    #footer {
+      width: 1200px;
+      height: 100px; 
+      background-color: #2c15ad;
+    }
+    /* clearfix */
+    .clearfix::before,
+    .clearfix::after {
+      content: '';
+      display: block;
+      line-height: 0;
+    }
+    .clearfix::after {
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="header">header</div>
+    <div id="nav">nav</div>
+    <div id="main" class="clearfix">
+      <div id="aside">aside</div>
+      <div id="article1">article 1</div>
+      <div id="article2">article 2</div>
+      <div id="article3">article 3</div>
+    </div>
+    <div id="footer">footer</div>
+  </div>
+
+</body>
+</html>
