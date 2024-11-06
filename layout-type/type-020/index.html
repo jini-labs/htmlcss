@@ -25,7 +25,6 @@
       background-color: #f7adad;
     }
     #main {
-      width: 100%;
       display: flex;
     }
     #aside {
@@ -48,10 +47,42 @@
       background-color: #fa5858;
     }
     @media (max-width: 1300px) {
+      #wrap {
+        width: 96%;
+      }
     }
     @media (max-width: 768px) {
+      #main {
+        flex-wrap: wrap;
+      }
+      #wrap {
+        width: 100%;
+      }
+      #aside {
+        width: 30%;
+        height: 630px;
+      }
+      #section {
+        width: 70%;
+        height: 630px;
+      }
+      #article {
+        width: 100%;
+        height: 150px;
+      }
     }
     @media (max-width: 480px) {
+      #main {
+        flex-wrap: wrap;
+      }
+      #aside {
+        width: 100%;
+        height: 200px;
+      }
+      #section {
+        width: 100%;
+        height: 430px;
+      }
     }
 
   </style>
