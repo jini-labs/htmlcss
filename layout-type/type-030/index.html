@@ -25,80 +25,40 @@
       background-color: #9c86e3;
     }
     #main {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      height: 780px;
+      display: grid;
+      grid-template-areas: 
+        "aside article1 article1"
+        "aside article2 article2"
+        "aside article3 article3"
+      ;
+      grid-template-columns: 300px 900px;
+      grid-template-rows: 260px 260px 260px;
     }
     #aside {
-      width: 30%;
-      height: 780px;
       background-color: #4d2ff3;
+      grid-area: aside;
     }
     #article1 {
-      width: 70%;
-      height: 260px; 
       background-color: #4b3fef;
+      grid-area: article1;
     }
     #article2 {
-    }
-    #article2-1 {
-      width: 100%;
-      height: 260px; 
       background-color: #281f8e;
+      grid-area: article2;
     }
-    #article2-2 {
-      width: 100%;
-      height: 260px; 
+    #article3 {
       background-color: #231883;
+      grid-area: article3;
     }
     #footer {
       height: 100px; 
       background-color: #2c15ad;
     }
     @media (max-width: 1300px) {
-      #wrap {
-        width: 96%;
-      }
-      #article2 {
-        display: flex;
-      }
-      #article2-1 {
-        width: 50%;
-        height: 520px;
-      }
-      #article2-2 {
-        width: 50%;
-        height: 520px;
-      }
     }
     @media (max-width: 768px) {
-      #wrap {
-        width: 100%;
-      }
-      #article1 {
-        width: 100%;
-        height: 390px;
-      }
-      #article2-1 {
-        width: 100%;
-        height: 390px;
-      }
-      #article2-2 {
-        display: none;
-      }
     }
     @media (max-width: 480px) {
-      #aside {
-        width: 100%;
-        height: 200px;
-      }
-      #article1 {
-        height: 430px;
-      }
-      #article2-1 {
-        height: 150px;
-      }
     }
   </style>
 </head>
@@ -109,10 +69,8 @@
     <div id="main">
       <div id="aside">aside</div>
       <div id="article1">article 1</div>
-      <div id="article2">
-        <div id="article2-1">article 2-1</div>
-        <div id="article2-2">article 2-2</div>
-      </div>
+      <div id="article2">article 2</div>
+      <div id="article3">article 3</div>
     </div>
     <div id="footer">footer</div>
   </div>
