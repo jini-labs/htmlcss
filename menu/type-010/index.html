@@ -13,6 +13,8 @@
       list-style: none;
     }
     a {
+      color: #000;
+      cursor: pointer;
       text-decoration: none;
     }
     #wrap {
@@ -21,7 +23,7 @@
       background-color: #eee;
     }
     #header {
-      width: 1200px;
+      width: 100%;
       height: 100px;
       background-color: #eee;
     }
@@ -37,8 +39,23 @@
       background-color: #e3e3e3;
       float: left;
     }
+    #header .nav > ul {
+      line-height: 100px;
+    }
+    #header .nav > ul > li {
+      float: right;
+    }
+    #header .nav > ul > li > a {
+      padding: 14px 32px;
+      background-color: #d9d9d9;
+    }
+    #header .nav > ul > li > a:hover {
+      padding: 14px 32px;
+      color: #d9d9d9;
+      background-color: #1e1e1e;
+    }
     #slider {
-      width: 1200px;
+      width: 100%;
       height: 300px;;
       background-color: #d9d9d9;
     }
