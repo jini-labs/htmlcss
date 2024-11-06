@@ -20,7 +20,7 @@
       background-color: #cff5a6;
     }
     #nav {
-      height: 300px;
+      height: 100px;
       background-color: #98c26c;
     }
     #main {
@@ -38,100 +38,41 @@
       margin: 0 auto;
     }
     .contents {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
-    .contents .content1 {
+    .contents .left {
+      width: 100%;
+      height: 100px;
+     }
+    .contents .left .content1 {
+      width: 100%;
       height: 100px;
       background-color: #537e24;
     }
-    .contents .content2 {
+    .contents .right {
+      width: 100%;
+      height: 680px;
+      display: flex;
+      flex-wrap: wrap;
+     }
+    .contents .right .content2 {
+      width: 100%;
       height: 200px;
       background-color: #405c22;
     }
-    .contents .content3 {
+    .contents .right .content3 {
       width: 50%;
       height: 480px;
       background-color: #3a5a18;
-      float: left;
     }
-    .contents .content4 {
+    .contents .right .content4 {
       width: 50%;
       height: 480px;
       background-color: #31550b;
-      float: left;
-    }
-    /* clearfix */
-    .clearfix::before,
-    .clearfix::after {
-      content: '';
-      display: block;
-      line-height: 0;
-    }
-    .clearfix::after {
-      clear: both;
     }
 
-    @media (max-width: 1300px) {
-      .container {
-        width: 96%;
-      }
-      .contents .content1 {
-        width: 30%;
-        height: 780px;
-        float: left;
-      }
-      .contents .content2 {
-        width: 70%;
-        height: 390px;
-        float: left;
-      }
-      .contents .content3 {
-        width: 35%;
-        height: 390px;
-      }
-      .contents .content4 {
-        width: 35%;
-        height: 390px;
-      }
-    }
-    @media (max-width: 768px) {
-      .container {
-        width: 100%;
-      }
-      .contents .content1 {
-        width: 30%;
-        height: 780px;
-      }
-      .contents .content2 {
-        width: 70%;
-        height: 260px;
-      }
-      .contents .content3 {
-        width: 70%;
-        height: 260px;
-      }
-      .contents .content4 {
-        width: 70%;
-        height: 260px;
-      }
-    }
-    @media (max-width: 480px) {
-      .contents .content1 {
-        width: 100%;
-        height: 195px;
-      }
-      .contents .content2 {
-        width: 100%;
-        height: 195px;
-      }
-      .contents .content3 {
-        width: 100%;
-        height: 195px;
-      }
-      .contents .content4 {
-        width: 100%;
-        height: 195px;
-      }
-    }
   </style>
 </head>
 <body>
@@ -143,11 +84,15 @@
       <div class="container"> nav container</div>
     </div>
     <div id="main">
-      <div class="container contents clearfix">
-        <div class="content1">c 1</div>
-        <div class="content2">c 2</div>
-        <div class="content3">c 3</div>
-        <div class="content4">c 4</div>
+      <div class="container contents">
+        <div class="left">
+          <div class="content1">c 1</div>
+        </div>
+        <div class="right">
+          <div class="content2">c 2</div>
+          <div class="content3">c 3</div>
+          <div class="content4">c 4</div>
+        </div>
       </div>
     </div>
     <div id="footer">
