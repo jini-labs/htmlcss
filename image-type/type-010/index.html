@@ -14,6 +14,10 @@
     h1,h2,h3,h,h5 {
       font-weight: normal;
     }
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
     .container {
       width: 1160px;
       padding: 0 20px;
@@ -25,7 +29,6 @@
     }
     .section { 
       padding: 120px 0;
-      text-align: center;
     }
     .section > h2 {
       font-weight: 800;
@@ -49,6 +52,9 @@
     .image {
       width: 49%;
       height: 370px;
+      padding: 220px 20px 30px 30px;
+      box-sizing: border-box;
+      color: white;
     }
     .image.img1 {
       background: url(images/image-type-010.jpg) no-repeat center center;
@@ -56,9 +62,29 @@
     .image.img2 {
       background: url(images/image-type-020.jpg) no-repeat center center / cover;
     }
-    .image__title {}
-    .image__desc {}
-    .image__btn {}
+    .image__title {
+      color: #eee;
+      margin-bottom: 10px;
+      font-weight: 300;
+    }
+    .image__desc {
+      color: #eee;
+      margin-bottom: 10px;
+      font-weight: 100;
+      padding-right: 100px;
+
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    .image__btn {
+      display: inline;
+      background: #bbb;
+      padding: 10px 20px;
+      color: #333;
+    }
   </style>
 </head>
 <body>
@@ -68,13 +94,13 @@
     <div class="image__inner container">
       <article class="image img1">
         <h3 class="image__title">Lorem, ipsum dolor.</h3>
-        <p class="image_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt asperiores minus omnis repellendus dolorem saepe dignissimos delectus dolore nisi excepturi?</p>
+        <p class="image__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt asperiores minus omnis repellendus dolorem saepe dignissimos delectus dolore nisi excepturi?</p>
         <!-- <img src="./images/image-type-010.jpg" alt="sample 1" /> -->
         <a class="image__btn" href="/">detail</a>
       </article>
       <article class="image img2">
         <h3 class="image__title">Lorem ipsum dolor sit amet.</h3>
-        <p class="image_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quas labore praesentium quos est!</p>
+        <p class="image__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quas labore praesentium quos est!</p>
         <!-- <img src="./images/image-type-020.jpg" alt="sample 2" /> -->
         <a class="image__btn" href="/">detail</a>
       </article>
