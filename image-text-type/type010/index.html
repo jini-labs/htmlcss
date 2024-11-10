@@ -79,6 +79,20 @@
       top: 9px;
     }
     .imgtext__img {
+      position: relative;
+    }
+    .imgtext__img a {
+      background-color: #fe2020;
+      color: white;
+      padding: 4px 34px;
+      border-radius: 30px;
+      display: inline-block;
+      position: absolute;
+      left: 30px;
+      bottom: 20px;
+    }
+    .imgtext__img a.blue{
+      background-color: #3050f0;
     }
     .imgtext__img.img1 {
       background: url(images/imgtext-type-030.jpg) no-repeat center center /cover;
@@ -109,7 +123,7 @@
         <a href="/">reference site</a>
       </div>
       <div class="imgtext__img img2">
-        <a href="/">tutorial site</a>
+        <a class="blue" href="/">tutorial site</a>
       </div>
     </div>
   </section>
