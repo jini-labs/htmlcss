@@ -25,23 +25,40 @@
     }
     .section { 
       padding: 120px 0;
-      text-align: center; }
+      text-align: center;
+    }
     .section > h2 {
       font-weight: 800;
       font-size: 50px;
       margin-bottom: 20px;
+      text-align: center;
     }
     .section > p {
       font-weight: 300;
       font-size: 22px;
       margin-bottom: 70px;
+      text-align: center;
     }
     .image__wrap {
 
     }
     .image__inner {
-
+      display: flex;
+      justify-content: space-between;
     }
+    .image {
+      width: 49%;
+      height: 370px;
+    }
+    .image.img1 {
+      background: url(images/image-type-010.jpg) no-repeat center center;
+    }
+    .image.img2 {
+      background: url(images/image-type-020.jpg) no-repeat center center / cover;
+    }
+    .image__title {}
+    .image__desc {}
+    .image__btn {}
   </style>
 </head>
 <body>
@@ -49,17 +66,17 @@
     <h2>portfolio</h2>
     <p>Consectetur adipisicing elit. Illum, cupiditate?</p>
     <div class="image__inner container">
-      <article class="image">
-        <h3>Lorem, ipsum dolor.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt asperiores minus omnis repellendus dolorem saepe dignissimos delectus dolore nisi excepturi?</p>
-        <img src="./images/image-type-010.jpg" alt="sample 1" />
-        <a href="/">detail</a>
+      <article class="image img1">
+        <h3 class="image__title">Lorem, ipsum dolor.</h3>
+        <p class="image_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt asperiores minus omnis repellendus dolorem saepe dignissimos delectus dolore nisi excepturi?</p>
+        <!-- <img src="./images/image-type-010.jpg" alt="sample 1" /> -->
+        <a class="image__btn" href="/">detail</a>
       </article>
-      <article class="image">
-        <h3>Lorem ipsum dolor sit amet.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quas labore praesentium quos est!</p>
-        <img src="./images/image-type-020.jpg" alt="sample 2" />
-        <a href="/">detail</a>
+      <article class="image img2">
+        <h3 class="image__title">Lorem ipsum dolor sit amet.</h3>
+        <p class="image_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quas labore praesentium quos est!</p>
+        <!-- <img src="./images/image-type-020.jpg" alt="sample 2" /> -->
+        <a class="image__btn" href="/">detail</a>
       </article>
     </div>
   </section>
