@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #faefef;
+    }
+    #wrap {
+      width: 1200px;
+      margin: 0 auto;
+    }
+    #header {
+      height: 100px;
+      background-color: #fad0d0;
+    }
+    #nav {
+      height: 100px;
+      background-color: #f7adad;
+    }
+    #main {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 30% 40% 30%;
+      grid-template-rows: 780px;
+    }
+    #aside {
+      background-color: #c48888;
+    }
+    #section {
+      background-color: #965353;
+    }
+    #article {
+      background-color: #623131;
+    }
+    #footer {
+      height: 100px;
+      background-color: #fa5858;
+    }
+    @media (max-width: 1300px) {
+      #wrap {
+        width: 96%;
+      }
+    }
+    @media (max-width: 768px) {
+      #wrap {
+        width: 100%;
+      }
+      #main {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 630px 150px;
+        grid-template-areas:
+          "aside section"
+          "article article"
+        ;
+      }
+      #aside {
+        grid-area: aside;
+      }
+      #section {
+        grid-area: section;
+      }
+      #article {
+        grid-area: article;
+      }
+    }
+    @media (max-width: 480px) {
+      #main {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 430px 150px;
+        grid-template-areas:
+          "aside"
+          "section"
+          "article"
+        ;
+      }
+    }
+
+  </style>
+</head>
+<body>
+ <div id="wrap">
+  <header id="header">header</header>
+  <nav id="nav">nav</nav>
+  <main id="main">
+    <aside id="aside">aside</aside>
+    <section id="section">section</section>
+    <footer id="article">article</footer>
+  </main>
+  <div id="footer">footer</div>
+ </div> 
+ 
+</body>
+</html>

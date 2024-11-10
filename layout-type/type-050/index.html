@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #e5f5d3;
+    }
+    #wrap {
+      margin: 0 auto;
+    }
+    #header {
+      height: 100px;
+      background-color: #cff5a6;
+    }
+    #nav {
+      height: 100px;
+      background-color: #98c26c;
+    }
+    #main {
+      height: 780px;
+      background-color: #5a8130;
+    }
+    #footer {
+      height: 200px;
+      background-color: #497719;
+    }
+    .container {
+      width: 1200px;
+      height: inherit;
+      background-color: rgba(0,0,0,0.1);
+      margin: 0 auto;
+    }
+    .contents {
+      display: grid;
+      grid-template-areas: 
+        "content1 content1" 
+        "content2 content2" 
+        "content3 content4" 
+      ;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 100px 200px 480px;
+    }
+    .contents .content1 {
+      background-color: #537e24;
+      grid-area: content1;
+    }
+    .contents .content2 {
+      background-color: #405c22;
+      grid-area: content2;
+    }
+    .contents .content3 {
+      background-color: #3a5a18;
+      grid-area: content3;
+    }
+    .contents .content4 {
+      background-color: #31550b;
+      grid-area: content4;
+    }
+
+    @media (max-width: 1300px) {
+      .container {
+        width: 96%;
+        grid-template-areas: 
+          "content1 content2 content2" 
+          "content1 content3 content4" 
+          "content1 content3 content4" 
+        ;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 390px 390px 0px;
+      }
+    }
+    @media (max-width: 780px) {
+      .container {
+        width: 100%;
+        grid-template-areas: 
+          "content1 content2" 
+          "content1 content3" 
+          "content1 content4" 
+        ;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 260px 260px 260px;
+      }
+    }
+    @media (max-width: 480px) {
+      .container {
+        width: 100%;
+        grid-template-areas: 
+          "content1" 
+          "content2" 
+          "content3" 
+          "content4" 
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 180px 200px 200px 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="header">
+      <div class="container">header container</div>
+    </div>
+    <div id="nav">
+      <div class="container"> nav container</div>
+    </div>
+    <div id="main">
+      <div class="container contents">
+        <div class="content1">c 1</div>
+        <div class="content2">c 2</div>
+        <div class="content3">c 3</div>
+        <div class="content4">c 4</div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="container">footer container</div>
+    </div>
+  </div>
+</body>
+</html>

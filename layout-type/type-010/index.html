@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #aeffb5;
+    }
+    #wrap {
+      width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-areas: 
+        "header header"
+        "nav nav"
+        "aside section"
+        "footer footer"
+      ;
+      grid-template-columns: 30% 70%;
+      grid-template-rows: 100px 100px 480px 100px;
+      background-color: #90fb99;
+    }
+    #header {
+      background-color: #6cfb78;
+      grid-area: header;
+    }
+    #nav {
+      background-color: #4af959;
+      grid-area: nav;
+
+    }
+    #aside {
+      background-color: #03f718;
+      grid-area: aside;
+    }
+    #section {
+      background-color: #43e651;
+      grid-area: section;
+
+    }
+    #footer {
+      background-color: #02c913;
+      grid-area: footer;
+    }
+    @media (max-width: 1300px) {
+      #wrap {
+        width: 96%;
+      }
+    }
+    @media (max-width: 768px) {
+      #wrap {
+        width: 100%;
+      }
+    }
+    @media (max-width: 480px) {
+      #wrap {
+      width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-areas: 
+        "header"
+        "nav"
+        "aside"
+        "section"
+        "footer"
+      ;
+      grid-template-columns: 100%;
+      grid-template-rows: 100px 100px 300px 480px 100px;
+      background-color: #90fb99;
+    }
+    }
+  </style>
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header id="header">header</header>
+    <nav id="nav">nav</nav>
+    <aside id="aside">aside</aside>
+    <section id="section">section</section>
+    <footer id="footer">footer</footer>
+  </div>
+</body>
+</html>
