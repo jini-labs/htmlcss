@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .blind {
+      width: 0;
+      height: 0;
+      line-height: 0;
+      overflow: hidden;
+      position: absolute;
+      text-indent: -999px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    ul, li {
+      list-style: none;
+    }
+
+    /* common */
+    .container {
+      width: 1160px;
+      padding: 0 20px;
+      margin: 0 auto;
+    }
+    /* imgtext type */
+    .imgtext__wrap {
+      width: 100%;
+      /* background-color: #ccc; */
+    }
+    .section {
+      padding: 120px 0;
+    }
+    .imgtext__inner {
+      display: flex;
+      justify-content: space-between;
+    }
+    .imgtext__inner div {
+      width: 32%;
+      height: 500px;
+    }
+    .imgtext__text {
+    }
+    .imgtext__small {
+      font-size: 16px;
+      color: #666;
+    }
+    .imgtext__title {
+      font-size: 20px;
+      color: black;
+    }
+    .imgtext__desc {
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+    .imgtext__list {
+    }
+    .imgtext__list li {
+      position: relative;
+      padding-left: 18px;
+    }
+    .imgtext__list li::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      background: #666;
+      border-radius: 50%;
+      position: absolute;
+      left: 5px;
+      top: 9px;
+    }
+    .imgtext__img {
+      position: relative;
+    }
+    .imgtext__img a {
+      background-color: #fe2020;
+      color: white;
+      padding: 4px 34px;
+      border-radius: 30px;
+      display: inline-block;
+      position: absolute;
+      left: 30px;
+      bottom: 20px;
+    }
+    .imgtext__img a.blue{
+      background-color: #3050f0;
+    }
+    .imgtext__img.img1 {
+      background: url(images/imgtext-type-030.jpg) no-repeat center center /cover;
+    }
+    .imgtext__img.img2 {
+      background: url(images/imgtext-type-040.jpg) no-repeat center center /cover;
+    }
+  </style>
+</head>
+<body>
+  <section id="imgTextType" class="imgtext__wrap section">
+    <h2 class="blind">Image Text Type</h2>
+    <div class="imgtext__inner container">
+      <div class="imgtext__text">
+        <span class="imgtext__small ">image text type 1</span>
+        <h3 class="imgtext__title">go reference site</h3>
+        <p class="imgtext__desc">for web designer Lorem, ipsum dolor.</p>
+        <ul class="imgtext__list">
+          <li><a href="/">tutorial site</a></li>
+          <li><a href="/">reference site</a></li>
+          <li><a href="/">font</a></li>
+          <li><a href="/">css</a></li>
+          <li><a href="/">webGL</a></li>
+          <li><a href="/">youtube site</a></li>
+        </ul>
+      </div>
+      <div class="imgtext__img img1">
+        <a href="/">reference site</a>
+      </div>
+      <div class="imgtext__img img2">
+        <a class="blue" href="/">tutorial site</a>
+      </div>
+    </div>
+  </section>
+  
+</body>
+</html>
