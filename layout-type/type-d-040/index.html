@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #wrap {
+      width: 100vw;
+      height: 900px;
+    }
+    #main {
+      display: flex;
+      flex-direction: row;
+    }
+    #aside {
+      width: 200px;
+      height: 800px;
+    }
+    #aside .logo {
+      width: 200px;
+      height: 100px;
+      background-color: #efefef;
+    }
+    #aside .nav {
+      width: 200px;
+      height: 700px;
+      background-color: #e3e3e3;
+    }
+    #section {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+    #section .slider {
+      width: 100vw;
+      height: 400px;
+      background-color: #d9d9d9;
+    }
+    #section .subnav {
+      width: 100vw;
+      height: 150px;
+      background-color: #d1d1d1;
+    }
+    #section .contents {
+      display: flex;
+    }
+    #section .contents .content1 {
+      width: 50%;
+      height: 250px;
+      background-color: #c7c7c7;
+    }
+    #section .contents .content2 {
+      width: 50%;
+      height: 250px;
+      background-color: #bcbcbc;
+    }
+    #footer {
+      width: 100vw;
+      height: 100px;
+      display: flex;
+      flex: 1 800px 1;
+    }
+    #footer .footer__left {
+      width: 30%;
+      height: 100px;
+      background-color: #c7c7c7;
+    }
+    #footer .footer__center {
+      width: 70%;
+      height: 50px;
+      flex-direction: column;
+    }
+    #footer .footer__center1 {
+      height: 50px;
+      background-color: #bcbcbc;
+    }
+    #footer .footer__center2 {
+      height: 50px;
+      background-color: #b1b1b1;
+    }
+    #footer .footer__right {
+      width: 30%;
+      height: 100px;
+      background-color: #a3a3a3;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="main">
+      <div id="aside">
+        <div class="logo">logo</div>
+        <div class="nav">nav</div>
+      </div>
+      <div id="section">
+        <div class="slider">slider</div>
+        <div class="subnav">sub nav</div>
+        <div class="contents">
+          <div class="content1">content 1</div>
+          <div class="content2">content 2</div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="footer__left">footer left</div>
+      <div class="footer__center">
+        <div class="footer__center1">footer center upper</div>
+        <div class="footer__center2">footer center lower</div>
+      </div>
+      <div class="footer__right">footer right</div>
+    </div>
+  </div>
+  
+</body>
+</html>
